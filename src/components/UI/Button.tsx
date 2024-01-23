@@ -3,7 +3,7 @@ import { Link, type LinkProps } from "react-router-dom";
 
 type BaseProps = {
   children: ReactNode;
-  textOnly: boolean;
+  textOnly?: boolean;
 };
 
 type ButtonProps = ComponentPropsWithoutRef<"button"> &

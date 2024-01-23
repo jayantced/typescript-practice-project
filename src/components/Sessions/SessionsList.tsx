@@ -1,8 +1,10 @@
+import SessionItem from "./SessionItem";
+
 type SessionsListProps = {sessions: {
     id: string;
     image: string;
     title: string;
-    description: string;
+    summary: string;
 }[]}
 
 export default function SessionsList({sessions}: SessionsListProps) {
@@ -10,10 +12,7 @@ export default function SessionsList({sessions}: SessionsListProps) {
     <ul id="sessions-list">
         {sessions.map((session) =>
         <li>
-          <img src={session.image}/>
-          <h2>{session.title}</h2>
-          <p>{session.description}</p>
-          <button>Learn More</button>
+          <SessionItem {...session} />
         </li>
       )}
     </ul>
