@@ -11,7 +11,7 @@ export default function SessionsList({sessions}: SessionsListProps) {
   return (
     <ul id="sessions-list">
         {sessions.map((session) =>
-        <li>
+        <li key={session.id}>
           <SessionItem {...session} />
         </li>
       )}
