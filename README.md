@@ -1,8 +1,3 @@
-
-
-## 📌 Live Demo
-https://shopzy-zeta.vercel.app/
-
 ## 😎 Features
 
 - Browse sessions
